@@ -45,4 +45,5 @@ class Text implements ArrayAccess, Countable {
 
     public function count() {
         return count($this->source);
-    }}
+    }
+}
