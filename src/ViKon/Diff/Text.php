@@ -23,7 +23,7 @@ class Text implements ArrayAccess, Countable {
         if (isset($this->options['compareCharacters']) && $this->options['compareCharacters']) {
             $this->source = str_split($source);
         } else {
-            $this->source = preg_split('/(\R)/', $source);
+            $this->source = preg_split('/(\R)/u', $source);
         }
     }
 
